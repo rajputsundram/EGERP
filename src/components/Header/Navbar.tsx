@@ -18,7 +18,7 @@ const Navbar=()=>{
         {name:"Services",path:"/services" },
         {name:"Solutions",path:"/solutions" },
         {name:"About us",path:"/aboutus" },
-        {name:"Blogs",path:"/Blogs" },
+        {name:"Blogs",path:"/blogs" },
         {name:"ContactUs",path:"/contactus" },
        
 
