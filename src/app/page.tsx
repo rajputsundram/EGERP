@@ -1,13 +1,18 @@
 
 'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 
+
 import CountUp from 'react-countup';
+import { IoChevronForward } from "react-icons/io5";
+
 
 import { IoArrowForwardCircle } from "react-icons/io5";
 
 export default function Home() {
+
 
 
 
@@ -23,11 +28,7 @@ const stats=[
     {
         num:1500,
         text:"Clients Served",
-    },
-    {
-        num:100,
-        text:"Code commits",
-    },
+    }
 ]
 
   const OurServices=[
@@ -50,6 +51,85 @@ const stats=[
 
   ]
 
+
+  const resources=[
+
+
+    {
+      image:'/Images/AccountImage.png',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+    {
+      image:'',
+      title:'Using ERP Software for Your Business’ Accounting',
+      path:''
+
+    },
+   
+   
+  ]
   return (
     <>
 <div className="w-full mt-24 flex justify-center items-center">
@@ -84,7 +164,8 @@ const stats=[
   <div className="w-[70%] ml-8  h-60 ">
     <h1 className="text-[40px]  font-bold">
     Who We Are?</h1>
-    <p>We are pioneers of progression. At EGERP Panipat, we offer tailored digital solutions for business of all sizes. We are dedicated to transforming businesses through technical expertise and business intelligence, focusing on quality, innovation, creativity, and expertise. </p>
+    <p>We are pioneers of progression. At EGERP Panipat, we offer tailored digital solutions for business of all sizes. We are dedicated to transforming businesses through technical expertise and business intelligence, focusing on quality, innovation, creativity, and expertise.  
+      </p>
 <p>
 Our team of experts brings a wealth of experience and creativity to the table, ensuring that your brand stands out and thrives in the online world.
 </p>
@@ -133,7 +214,10 @@ With EGERP Panipat, you’re not just finding digital solutions; you’re embrac
 
 {/* fourth section */}
 
-<div className="flex flex-col mt-32"><div className="flex">
+<div className="flex flex-col mt-32">
+
+
+<div className="flex">
   
 
 {/* image sections */}
@@ -147,14 +231,16 @@ With EGERP Panipat, you’re not just finding digital solutions; you’re embrac
     <h1 className="text-[40px]  font-bold">
     Our Impact
     </h1>
+    <div className="flex flex-col">
     <p>With every project, we don’t just deliver software; we deliver experiences that shape futures. Our impact resonates beyond code and design. We have provided diverse solutions to uplift the digital landscape of today’s business world. 
+      </p>
 <p>
 Our clients’ success stories are our badges of honor, reflecting our commitment to excellence and the powerful, positive change we bring to every venture.
 </p>
 <p>
 Join us, and let’s make an impact together – an impact that lasts and leads the way to a brighter, more successful future.
 </p>
-</p>
+</div>
   </div>
 
 </div>
@@ -203,18 +289,25 @@ Join us, and let’s make an impact together – an impact that lasts and leads 
   {/* graph section */}
   <div className="flex justify-center">
 
-  <div className='flex gap-16 max-w-[80vw] justify-center items-center bg-red-500 '>
+  <div className='flex gap-16 max-w-[80vw] justify-center items-center  '>
                 {stats.map((item,index)=>{
 
                     
                     return(
                     <>
-                    <div className='flex-1 bg-blue-400 flex flex-col items-center justify-center' key={index}>
+                    <div className='flex-1   w-64 flex border-gray-700 border-l-2 flex-col items-center justify-center' key={index}>
+                      <div className="flex items-center">
                         <CountUp end={item.num}
                          duration={5} delay={2} className='text-4xl xl:text-6xl font-extrabold
                           text-red-600'/>
+                          {index==1? <span className="text-4xl xl:text-6xl font-extrabold
+                          text-red-600">%</span>: <span className="text-4xl xl:text-6xl font-extrabold
+                          text-red-600">+</span>}
                          
-                   <p className='w-[200px] flex justify-center items-center font-sans text-[30px] text-center'>{item.text}</p>
+                          </div>
+                          
+                         
+                   <p className='w-[200px] flex justify-center items-center font-sans text-4xl font-bold text-center'>{item.text} </p>
                     </div>
                     </>
                     )
@@ -222,31 +315,44 @@ Join us, and let’s make an impact together – an impact that lasts and leads 
                 })}
             </div>
   </div>
-
-  {/* reviews section */}
-  <div className="flex flex-row justify-center gap-14 p-[24px] mt-6 ">
-                <div className="flex justify-center items-center text-wrap flex-col h-[230px] w-[410px] border-solid p-2 border-[3px] border-gray-700 rounded-2xl bg-gray-200">
-                  <p className="text-[16px] py-2">"The ERP solution from EGERP Panipat revolutionized our operations. It's not just a system; it's the backbone of our business now. The seamless integration and intuitive design have made management a breeze. Their support team is always there, making sure we're on the path to success."</p>
-                  <div className="flex justify-start items-start flex-row gap-11 mt-4">
-                  <img src="https://egerppanipat.com/wp-content/uploads/2024/01/english-programs.webp"  className="border-2 border-solid p-3 rounded-full h-[70px] w-[70px]" />
-                  <h4 className="mb-5 mt-3 font-medium font-sans">Shiela, Owner, NIPS Education</h4>
-                  </div>
-                </div>
-  
-  
-                <div className="flex justify-center items-center text-wrap flex-col h-[230px] w-[410px] border-solid p-2 border-[3px] border-gray-700 rounded-2xl bg-gray-200">
-                  <p className="text-[16px]">“I highly recommend EGERP. They turned our complex requirements into a sleek, efficient application. The attention to detail and understanding of our needs was evident in every aspect of the project. It's not just their technology that impresses, but their commitment to truly delivering value."</p>
-                  <div className="flex justify-start items-start flex-row gap-11 mt-4">
-                  <img src="#"  className="border-2 border-solid p-3 rounded-full h-[70px] w-[70px]" />
-                  <h4 className="mb-5 mt-3 font-medium font-sans">	
-                  Jerry, CMO, Apollo</h4>
-                  </div>
-                </div>
-            </div>
-  
 </div>
 
 
+{/* Resources & Insights sections */}
+<div className="h-auto flex flex-col justify-center items-center">
+
+  {/* heading section */}
+<div className="">
+  <h1 className="flex h-60 my-6 justify-center items-center font-bold text-[50px]">Resources & Insights</h1>
+</div>
+
+{/* cards sections */}
+
+<div className="sm:grid  grid  sm:grid-row-2 sm:grid-cols-4 w-[80%] gap-8      justify-items-center items-center">
+
+  {
+resources.map((items,index)=>{
+  return(
+
+    <>
+    <div key={index} className="flex flex-col rounded-2xl w-[300px]  h-[430px] shadow-lg hover:shadow-xl" >
+      <Image className="rounded-t-2xl" src={items.image} width={500} layout="responsive"  height={100} alt="alt"></Image>
+
+
+      <h1 className="text-xl mt-10 mx-5 font-bold">{items.title}</h1>
+      <Link href={items.path}>
+      <button className="flex mt-7 font-semibold mx-5 justify-center items-center border-red-600 border-t-2 text text-red-600">READ MORE <span className="text-red-600 flex justify-center items-center gap-0 text-sm"><IoChevronForward  className=" text-[20px] w-[10px]"/><IoChevronForward className=" text-[20px] w-[10px]" /></span></button>
+      </Link>
+    </div>
+    </>
+  )
+})
+  }
+</div>
+
+</div>
+
+<div className="flex h-48 justify-center items-center"><button className="h-14 p-1 rounded-lg font-bold w-52 text-lg bg-red-500 text-white flex justify-center items-center"><Link href={"/blogs"}className="flex justify-center items-center ">Our Blogs Section<span className="ml-1 text-3xl font-bold "><IoArrowForwardCircle /></span></Link></button></div>
 </>
   );
 }
