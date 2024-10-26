@@ -1,43 +1,217 @@
 'use client'
+import React from "react";
+import Bloglink from "../../components/blogslink/Bloglink";
+import BlogpostCards from "../../components/BlogPost cards/BlogpostCards";
 
-import React from 'react'
-import Typewriter from 'typewriter-effect';
-import Image from 'next/image';
+export default function Blogs() {
+   
+   
+    const Smallblogs = [
+        { id:1,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'At EGERP Panipat, we craft tailored digital marketing',
+            link: 'https://egerppanipat.com/using-erp-software-for-your-business-accounting/'
+        },
+        { id:2,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'At EGERP Panipat, we craft tailored digital marketing ',
+            link: 'https://egerppanipat.com/tax-implications-of-investing-in-mutual-funds/'
+        },
+        { id:3,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'At EGERP Panipat, we craft tailored digital marketing',
+            link: 'https://egerppanipat.com/ways-to-make-a-grey-kitchen-look-more-lively/'
+        },
+        { id:4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'At EGERP Panipat, we craft tailored digital marketing',
+            link: "https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/"
+        },
+        
+        { id:4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'At EGERP Panipat, we craft tailored digital marketing',
+            link: "https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/"
+        },
+        
+        { id:4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'At EGERP Panipat, we craft tailored digital marketing',
+            link: "https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/"
+        }
+    ];
 
-const page = () => {
-  return (
-   <>
-   <div className='h-[900px]'>
-    {/* heading */}
 
-    <div className='flex mt-20  h-96 justify-center items-center'>
+    const blogs = {
+        Technology: [
+          {
+            id: 1,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'At EGERP Panipat, we craft tailored ',
+            link: 'https://egerppanipat.com/using-erp-software-for-your-business-accounting/',
+          },
+          {
+            id: 2,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Common SEO mistakes businesses ',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 2,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Common SEO mistakes businesse',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 2,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Common SEO mistakes businesses.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          }
+        ],
+        Business: [
+          {
+            id: 3,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Maximizing efficiency with ERP solutions tailored for business accounting.',
+            link: 'https://egerppanipat.com/using-erp-software-for-your-business-accounting/',
+          },
+          {
+            id: 4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'The benefits of ERP systems for small businesses.',
+            link: 'https://egerppanipat.com/tax-implications-of-investing-in-mutual-funds/',
+          },
+          {
+            id: 4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'The benefits of ERP systems for small businesses.',
+            link: 'https://egerppanipat.com/tax-implications-of-investing-in-mutual-funds/',
+          },
+          {
+            id: 4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'The benefits of ERP systems for small businesses.',
+            link: 'https://egerppanipat.com/tax-implications-of-investing-in-mutual-funds/',
+          },
+        ],
+        Travel: [
+          {
+            id: 5,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'How to leverage export management solutions to grow your business.',
+            link: 'https://egerppanipat.com/ways-to-make-a-grey-kitchen-look-more-lively/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+        ],
+        Finance: [
+          {
+            id: 1,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'At EGERP Panipat, we craft tailored ',
+            link: 'https://egerppanipat.com/using-erp-software-for-your-business-accounting/',
+          },
+          {
+            id: 2,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Common SEO mistakes businesses ',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 2,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Common SEO mistakes businesse',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 2,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Common SEO mistakes businesses.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          }
+        ],
+        Entertainment: [
+          {
+            id: 3,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Maximizing efficiency with ERP solutions tailored for business accounting.',
+            link: 'https://egerppanipat.com/using-erp-software-for-your-business-accounting/',
+          },
+          {
+            id: 4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'The benefits of ERP systems for small businesses.',
+            link: 'https://egerppanipat.com/tax-implications-of-investing-in-mutual-funds/',
+          },
+          {
+            id: 4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'The benefits of ERP systems for small businesses.',
+            link: 'https://egerppanipat.com/tax-implications-of-investing-in-mutual-funds/',
+          },
+          {
+            id: 4,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'The benefits of ERP systems for small businesses.',
+            link: 'https://egerppanipat.com/tax-implications-of-investing-in-mutual-funds/',
+          },
+        ],
+        Education: [
+          {
+            id: 5,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'How to leverage export management solutions to grow your business.',
+            link: 'https://egerppanipat.com/ways-to-make-a-grey-kitchen-look-more-lively/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+        ],
+      };
+      
 
-{/* text section */}
-      <div className='  w-[50%] items-start  h-full justify-center flex  '>
-        <div className='  h-[300px] w-[70%] flex items-center'>
-          <h1 className='  font-poppins   font-bold text-[50px] '>Welcome! Dive into my 
-     <span className='text-red-500'>     <Typewriter
-      options={{
-        strings: ['Financial Blogs',"Business Blogs","Travel Blogs","Finance Blogs","Entertainment Blogs","Lifestyle Blogs","Health Blogs"],
-        autoStart: true,
-        loop: true,
-      }}
-    /></span>
-    </h1>
-          </div>
-
-      </div>
-{/* image section */}
-      <div className='flex justify-start items-start   w-[50%] '>
-        <img src={'https://www.impactbnd.com/hs-fs/hubfs/social-suggested-images/5_Blog_Layout_Best_Practices_From_2016-1.jpg?length=1200&name=5_Blog_Layout_Best_Practices_From_2016-1.jpg'}    className='rounded-3xl w-[80%] h-[400px] ' alt=''/>
-      </div>
-
-   </div>
-
-
-   </div>
-   </>
-  )
+    return (
+        <>
+        <div className="my-[50px] font-poppins font-bold text-[70px] flex flex-row justify-center items-center"><h1>Welcome to Blog</h1></div>
+        <div className=" flex flex-row justify-center items-center">
+            <Bloglink blogs={blogs}  />
+            
+        </div>
+        <div className=" flex flex-row justify-center items-center">
+                <BlogpostCards Smallblogs={Smallblogs} />
+        </div>
+        </>
+    );
 }
-
-export default page
