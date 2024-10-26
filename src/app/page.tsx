@@ -50,30 +50,6 @@ const stats=[
 
   ]
 
-  const blog=[
-    {
-    img:'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
-    desc:'At EGERP Panipat, we craft tailored digital marketing',
-    link:'https://egerppanipat.com/using-erp-software-for-your-business-accounting/'
-    },
-    {
-    img:'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
-    desc:'At EGERP Panipat, we craft tailored digital marketing ',
-    link:'https://egerppanipat.com/tax-implications-of-investing-in-mutual-funds/'
-    },
-    {
-    img:'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
-    desc:'At EGERP Panipat, we craft tailored digital marketing',
-    link:'https://egerppanipat.com/ways-to-make-a-grey-kitchen-look-more-lively/'
-    },
-    {
-    img:'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
-    desc:'At EGERP Panipat, we craft tailored digital marketing',
-    link:"https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/"
-    },
-]
-
-
   return (
     <>
 <div className="w-full mt-24 flex justify-center items-center">
@@ -270,43 +246,7 @@ Join us, and let’s make an impact together – an impact that lasts and leads 
   
 </div>
 
-<div className="flex justify-center items-center m-[90px] p-[70px] ">
 
-<div className='border-solid border-[2px] border-stone-900 rounded-3xl w-[370px] h-[690px]  flex justify-center items-center flex-col gap-4 hover:shadow-lg  '>
-
-        <div className="mt-5 rounded-lg text-3xl font-extrabold mb-4 bg-gray-300 p-3 w-[260px] h-[70px] text-center shadow-md ">
-            <h3>Technology</h3>
-        </div>
-        <div className="flex justify-center flex-row flex-wrap flex-grow gap-1"> 
-
-                    <div className="flex justify-center flex-row flex-wrap gap-4">
-
-                  {blog.map((item, index) => (
-
-                   
-                    
-                     <div key={index} className="border-[2px] rounded-lg h-[230px] w-[150px] border-gray flex flex-col justify-start items-center text-center hover:shadow-md ">
-                      <a href={item.link} className="cursor-pointer">
-                      <img src={item.img} width={1500} height={120} alt="Blog Image" className="h-[100px] w-[200px] rounded-md" />
-
-                      <p className="text-md text-bold font-bold text-wrap mt-2 px-1 ">{item.desc}</p>
-                      </a>
-                      <a href={item.link} className="cursor-pointer">
-                      <div className="flex flex-row"> <h5 className="font-bold text-green-500 text-sm mt-1">Read More</h5></div>
-                      </a>
-                    </div>
-                   
-                  ))}
-                </div>
-         
-        </div>
-
-        <div>
-            <a href="/Blogs"><button className="bg-red-500 hover:bg-red-600 mb-5 w-[170px] h-[40px] text-white font-bold rounded-lg">All Tech Post</button></a>
-        </div>
-
-    </div>
-    </div>
 </>
   );
 }
