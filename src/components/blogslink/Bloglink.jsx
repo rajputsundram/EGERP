@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Bloglink({ blogs }) {
   return (
@@ -11,14 +12,16 @@ function Bloglink({ blogs }) {
           </div>
 
           <div className="flex justify-center flex-row flex-wrap flex-grow gap-1">
-            <div className="flex justify-center flex-row flex-wrap gap-4">
+            <div className="flex justify-center flex-row flex-wrap gap-4  ">
               {blogs[category].map((item) => (
                 <a href={item.link} className="cursor-pointer" key={item.id}>
-                  <div className="border-[2px] rounded-lg h-[230px] w-[150px] border-gray flex flex-col justify-start items-center text-center hover:shadow-md">
+                  <div className="border-[2px] rounded-lg h-[230px] w-[150px] border-gray flex flex-col justify-start items-start text-start hover:shadow-md ">
                     <img src={item.img} width={1500} height={120} alt="Blog" className="h-[100px] w-[200px] rounded-md" />
-                    <p className="text-md font-bold text-wrap mt-2 px-1 overflow-hidden text-ellipsis whitespace-nowrap">{item.desc}</p>
+                    <p className="text-md font-bold text-wrap mt-2  overflow-auto no-scrollbar text-ellipsis whitespace-nowrap px-2">{item.desc}</p>
                     <div className="flex flex-row">
-                      <h5 className="font-bold text-green-500 text-sm mt-1">Read More</h5>
+                      <Link href={"./"}>
+                      <h5 className="font-bold text-green-500 text-sm mt-1 px-2">Read More</h5>
+                      </Link>
                     </div>
                   </div>
                 </a>
@@ -26,8 +29,8 @@ function Bloglink({ blogs }) {
             </div>
           </div>
 
-          <div>
-            <button className="bg-red-500 hover:bg-red-600 mb-6 w-[170px] h-[50px] text-white font-bold rounded-lg">All {category} Posts</button>
+          <div className=''>
+            <button className="bg-red-500 hover:bg-red-600  mb-6 w-[170px] h-[50px] text-white font-bold rounded-lg">All {category} Posts</button>
           </div>
 
         </div>

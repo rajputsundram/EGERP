@@ -352,7 +352,7 @@ resources.map((items,index)=>{
 
 </div>
 
-<div className="flex h-48 justify-center items-center"><button className="h-14 p-1 rounded-lg font-bold w-52 text-lg bg-red-500 text-white flex justify-center items-center"><Link href={"/blogs"}className="flex justify-center items-center ">Our Blogs Section<span className="ml-1 text-3xl font-bold "><IoArrowForwardCircle /></span></Link></button></div>
+<div className="flex h-48 justify-center items-center"><button className="h-14 p-1 rounded-lg font-bold w-52 text-lg bg-red-500 text-white flex justify-center items-center"><Link href={"/Blogs"}className="flex justify-center items-center ">Our Blogs Section<span className="ml-1 text-3xl font-bold "><IoArrowForwardCircle /></span></Link></button></div>
 </>
   );
 }

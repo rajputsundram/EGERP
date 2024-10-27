@@ -1,0 +1,6 @@
+[33mc9d4cc5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: pull --tags origin main: Fast-forward
+[33m24b2c5c[m HEAD@{1}: commit: NA
+[33m3960d74[m HEAD@{2}: commit: Updated
+[33ma39fb9a[m HEAD@{3}: Branch: renamed refs/heads/main to refs/heads/main
+[33ma39fb9a[m HEAD@{5}: Branch: renamed refs/heads/master to refs/heads/main
+[33ma39fb9a[m HEAD@{7}: commit (initial): Initial commit from Create Next App
