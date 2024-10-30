@@ -189,7 +189,7 @@ export default function Home() {
       // flex flex-col md:flex-row items-center
       >
         {/* Text Section */}
-        <div className="md:w-[50%] flex items-center justify-center mt-10">
+        <div className="md:w-[50%] flex items-center justify-center mt-28">
           <Image
             src="https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg"
             width={600}
@@ -200,7 +200,7 @@ export default function Home() {
         </div>
         <div className="lg:w-[100%] sm:w-[100%] flex md:justify-end mt-10">
         <div className="w-[70%] flex flex-col md:text-normal ">
-          <h1 className="text-[40px] font-bold mb-4">What We Do?</h1>
+          <h1 className="text-[40px] font-bold mb-4">What We Do3?</h1>
           <p className="text-wrap mb-4">
             We specialize in digital marketing, ERP solutions, and customized
             software for our clients, prioritizing user-friendliness in every
@@ -296,7 +296,7 @@ export default function Home() {
       <div className="flex flex-col">
         {/* heading */}
 
-        <h1 className="flex h-60 my-6 justify-center items-center font-bold text-[50px]">
+        <h1 className="flex h-60 my-6 justify-center items-center font-bold text-[50px] ml-4">
           Why Choose EGERP Panipat?
         </h1>
       </div>
