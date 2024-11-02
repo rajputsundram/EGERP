@@ -106,13 +106,14 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="w-full flex flex-col lg:flex-row items-center lg:items-center mt-10">
+      <div className=" flex flex-col lg:flex-row items-center  justify-center lg:items-center mt-10">
         {/* text section */}
-        <div className="w-full lg:w-1/2 flex flex-col mb-4 my-42">
-          <h1 className="w-4/5 sm:w-3/4 lg:w-1/2 font-poppins text-2xl font-bold mx-auto mb-8 flex justify-center items-center bg-white text-center">
+        <div className="sm:w-[50%] w-full flex sm:justify-end justify-center items-center sm:items-end flex-col mb-4 my-42">
+          <div className=" flex flex-col justify-center items-start sm:w-[70%] w-full sm:p-0 p-4">
+          <h1 className="font-poppins sm:text-5xl  text-3xl font-bold mx-auto mb-8 flex justify-center items-center">
             We Help Organizations Run Smooth Business Operations.
           </h1>
-          <div className="flex justify-center lg:justify-center">
+          <div className="flex">
             <button className="h-12 sm:h-14 px-4 rounded-lg font-bold w-40 sm:w-48 bg-red-500 text-white flex justify-center items-center">
               <Link href="" className="flex justify-center items-center">
                 Get In Touch{" "}
@@ -122,10 +123,11 @@ export default function Home() {
               </Link>
             </button>
           </div>
+          </div>
         </div>
 
         {/* image section */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mt-4 lg:mt-0">
+        <div className="w-full lg:w-1/2 flex justify-center sm:p-0 p-1  lg:justify-start mt-4 lg:mt-0">
           <Image
             src="https://egerppanipat.com/wp-content/uploads/2024/01/pexels-tiger-lily-4481534-2048x1365.jpg"
             width={600}
@@ -139,16 +141,28 @@ export default function Home() {
       {/* second section */}
 
       <div className="flex flex-col ">
-        <h1 className="flex h-60 my-12 justify-center items-center font-bold text-[60px]">
+        <h1 className="flex sm:h-60 h-48 my-12 justify-center items-center font-bold text-[55px] sm:no-underline underline sm:text-[60px] ">
           EGERP Panipat
         </h1>
 
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row justify-center  ">
           {/* image sections */}
+          <div className="md:w-[50%] mt-6 mr-0   sm:w-[50%] flex  sm:px-3 p-1 items-start justify-end ">
+            <Image
+              src={
+                "https://egerppanipat.com/wp-content/uploads/2024/01/employees-meeting-room-office-scaled-1-1024x784.jpg"
+              }
+              width={600}
+              height={200}
+              
+              alt=""
+              className="rounded-[25px] "
+            />
+          </div>
 
           {/* text sections */}
-          <div className="lg:w-[100%] sm:w-[100%] md:justify-around">
-            <div className="w-[70%] ml-8 flex flex-col lg:text-start">
+          <div className=" sm:mt-4  sm:w-[50%] md:justify-around">
+            <div className="sm:w-[70%] w-full flex flex-col lg:text-start sm:px-6 p-4 ">
               <h1 className="text-[40px] font-bold">Who We Are?</h1>
               <p>
                 We are pioneers of progression. At EGERP Panipat, we offer
@@ -169,38 +183,20 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="md:w-[50%] mt-6 mr-10  flex  items-center justify-center ">
-            <Image
-              src={
-                "https://egerppanipat.com/wp-content/uploads/2024/01/employees-meeting-room-office-scaled-1-1024x784.jpg"
-              }
-              width={600}
-              height={80}
-              alt=""
-              className="rounded-[25px] "
-            />
-          </div>
+        
         </div>
       </div>
 
       {/* third  section */}
 
-      <div className="flex flex-col-reverse md:flex-row items-start mt-32 border-3 ml-9"
+      <div className="flex sm:flex-row flex-col-reverse sm:p-0 p-2 justify-center  items-center md:flex-row "
       // flex flex-col md:flex-row items-center
       >
         {/* Text Section */}
-        <div className="md:w-[50%] flex items-center justify-center mt-28">
-          <Image
-            src="https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg"
-            width={600}
-            height={400}
-            alt="Meeting Room"
-            className="rounded-[25px] object-cover"
-          />
-        </div>
-        <div className="lg:w-[100%] sm:w-[100%] flex md:justify-end mt-10">
-        <div className="w-[70%] flex flex-col md:text-normal ">
-          <h1 className="text-[40px] font-bold mb-4">What We Do3?</h1>
+     
+        <div className=" sm:w-[50%] w-full flex md:justify-end mt-10">
+        <div className="sm:w-[70%] w-full sm:p-0 p-3 flex flex-col md:text-normal ">
+          <h1 className="text-[40px] font-bold mb-4">What We Do?</h1>
           <p className="text-wrap mb-4">
             We specialize in digital marketing, ERP solutions, and customized
             software for our clients, prioritizing user-friendliness in every
@@ -219,14 +215,37 @@ export default function Home() {
           </p>
         </div>
         </div>
+        <div className="md:w-[50%] flex items-center justify-center mt-28">
+          <Image
+            src="https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg"
+            width={600}
+            height={400}
+            alt="Meeting Room"
+            className="rounded-[25px] object-cover"
+          />
+        </div>
+      
       </div>
 
       {/* fourth section */}
 
-      <div className="flex flex-col md:flex-row items-center mt-32">
+      <div className="flex flex-col sm:flex-row md:flex-row items-start  justify-start mt-32">
+   {/* image section */}
+      <div className="w-[100%]  mr-10 sm:p-0 p-2  flex  items-start justify-end">
+     
+          <Image
+            src={
+              "https://egerppanipat.com/wp-content/uploads/2024/01/pexels-tom-fisk-3856433-scaled-e1706178875123-1024x650.jpg"
+            }
+            width={600}
+            height={80}
+            alt=""
+            className="rounded-[25px] "
+          />
+        </div>
         {/* text sections */}
-        <div className="lg:w-[100%] sm:w-[100%] md:justify-around  ">
-          <div className="w-[70%] ml-8 flex flex-col lg:text-start">
+        <div className="lg:w-[100%] flex flex-col justify-start sm:p-0 p-4 sm:mt-0  mt-5  items-start h-full sm:w-[100%] md:justify-around ">
+          <div className="sm:w-[70%]  w-full  flex flex-col lg:text-start">
             <h1 className="text-[40px] font-bold">Our Impact</h1>
             <p>
             With every project, we don’t just deliver software; we deliver experiences that shape futures. Our impact resonates beyond code and design. We have provided diverse solutions to uplift the digital landscape of today’s business world.
@@ -239,33 +258,23 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="w-[100%] mt-6 mr-10  flex  items-center justify-center">
-          <Image
-            src={
-              "https://egerppanipat.com/wp-content/uploads/2024/01/pexels-tom-fisk-3856433-scaled-e1706178875123-1024x650.jpg"
-            }
-            width={600}
-            height={80}
-            alt=""
-            className="rounded-[25px] "
-          />
-        </div>
+       
       </div>
 
       {/* Our Services section */}
-      <div className="flex justify-center items-center flex-col  w-full">
-        <h1 className="flex h-60 my-6 justify-center items-center font-bold text-[50px]">
+      <div className="flex justify-center items-center flex-col   w-full ">
+        <h1 className="flex h-60 my-6 justify-center items-center font-bold text-[50px] sm:no-underline underline">
           Our Services
         </h1>
 
         {/* cards */}
-        <div className="flex items-center justify-center gap-8 flex-wrap">
+        <div className="flex items-center justify-center gap-8 flex-wrap sm:p-0 p-4 ">
           {OurServices.map((items, index) => {
             return (
               <>
                 <div
                   key={index}
-                  className="h-[380px] p-5 w-[400px] border-[3px] rounded-lg border-black flex flex-col justify-center items-center text-center"
+                  className="sm:h-[380px]  p-5 sm:w-[400px]  border-[3px] rounded-lg border-black flex flex-col justify-center items-center text-center"
                 >
                   <h1 className="text-[30px] mb-4 font-bold">{items.title}</h1>
                   <Image
@@ -307,8 +316,9 @@ export default function Home() {
             {stats.map((item, index) => {
               return (
                 <>
+                
                   <div
-                    className="flex-1  w-64 flex border-l-2 border-black pl-2 flex-col items-center justify-center"
+                    className="flex-1  w-64 flex   sm:my-0 my-5 sm:border-l-2 sm:border-black   flex-col items-center justify-center"
                     key={index}
                   >
                     <div className="flex items-center">
@@ -350,7 +360,7 @@ export default function Home() {
       <div className="h-auto flex flex-col justify-center items-center">
         {/* heading section */}
         <div className="">
-          <h1 className="flex h-60 my-6 justify-center items-center font-bold text-[50px]">
+          <h1 className="flex h-60 my-6 justify-center items-center  font-extrabold sm:font-bold sm:text-[50px] text-[36px] sm:no-underline underline p-1 ">
             Resources & Insights
           </h1>
         </div>
@@ -395,7 +405,7 @@ export default function Home() {
 
       <div className="flex h-48 justify-center items-center">
         <button className="h-14 p-1 rounded-lg font-bold w-52 text-lg bg-red-500 text-white flex justify-center items-center">
-          <Link href={"/blogs"} className="flex justify-center items-center ">
+          <Link href={"/Blogs"} className="flex justify-center items-center ">
             Our Blogs Section
             <span className="ml-1 text-3xl font-bold ">
               <IoArrowForwardCircle />

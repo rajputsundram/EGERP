@@ -15,11 +15,11 @@ const Navbar=()=>{
 
     const links=[
         {name:"Home",path:"/" },
-        {name:"Services",path:"/services" },
-        {name:"Solutions",path:"/solutions" },
-        {name:"About us",path:"/aboutus" },
+        {name:"Services",path:"/Services" },
+        {name:"Solutions",path:"/Solutions" },
+        {name:"About us",path:"/Aboutus" },
         {name:"Blogs",path:"/Blogs" },
-        {name:"ContactUs",path:"/contactus" },
+        {name:"ContactUs",path:"/Contactus" },
        
 
 
