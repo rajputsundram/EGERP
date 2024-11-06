@@ -9,6 +9,7 @@ import { IoChevronForward } from "react-icons/io5";
 import { IoArrowForwardCircle } from "react-icons/io5";
 
 export default function Home() {
+
   const stats = [
     {
       num: 10,
@@ -189,7 +190,7 @@ export default function Home() {
       // flex flex-col md:flex-row items-center
       >
         {/* Text Section */}
-        <div className="md:w-[50%] flex items-center justify-center mt-28">
+        <div className="md:w-[50%] flex items-center pr-3 justify-center mt-28">
           <Image
             src="https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg"
             width={600}
@@ -200,7 +201,7 @@ export default function Home() {
         </div>
         <div className="lg:w-[100%] sm:w-[100%] flex md:justify-end mt-10">
         <div className="w-[70%] flex flex-col md:text-normal ">
-          <h1 className="text-[40px] font-bold mb-4">What We Do3?</h1>
+          <h1 className="text-[40px] font-bold mb-4">What We Do?</h1>
           <p className="text-wrap mb-4">
             We specialize in digital marketing, ERP solutions, and customized
             software for our clients, prioritizing user-friendliness in every
@@ -239,7 +240,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="w-[100%] mt-6 mr-10  flex  items-center justify-center">
+        <div className="w-[100%] mt-6 mr-10 pl-4 flex items-center justify-center">
           <Image
             src={
               "https://egerppanipat.com/wp-content/uploads/2024/01/pexels-tom-fisk-3856433-scaled-e1706178875123-1024x650.jpg"
