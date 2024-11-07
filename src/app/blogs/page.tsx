@@ -204,7 +204,7 @@ export default function Blogs() {
 
     return (
         <>
-        <div className="my-[50px] font-poppins font-bold text-[70px] flex flex-row justify-center items-center"><h1>Welcome to Blog</h1></div>
+        <div className="mt-[40px] font-poppins font-bold text-[50px] flex flex-row justify-center items-center md:text-[60px] lg:text-[65px]"><h1>Welcome to Blog</h1></div>
         <div className=" flex flex-row justify-center items-center">
             <Bloglink blogs={blogs}  />
             
