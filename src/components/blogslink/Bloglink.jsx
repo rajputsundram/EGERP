@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Bloglink({ blogs }) {
   return (
@@ -11,18 +12,20 @@ function Bloglink({ blogs }) {
           </div>
 
           <div className="flex justify-center flex-row flex-wrap flex-grow gap-1">
-            <div className="flex justify-center flex-row flex-wrap gap-4">
+            <div className="flex justify-center flex-row flex-wrap gap-4  ">
               {blogs[category].map((item) => (
-                <a href={item.link} className="cursor-pointer" key={item.id}>
+                <Link href={item.link} className="cursor-pointer" key={item.id}>
                   <div className="border-[2px] rounded-xl h-[200px] w-[150px]
                        bg-gradient-to-tl from-slate-800 via-violet-500 to-zinc-400 border-gray flex flex-col justify-start items-center text-center sm:w-[150px] sm:h-[220px]   md:w-[230px] md:h-[260px] lg:w-[160px] lg:h-[240px] hover:scale-105 transition-transform duration-300">
                     <img src={item.img} width={1500} height={120} alt="Blog" className="h-[100px] w-[200px] rounded-t-md sm:h-[120px] md:w-[290px] md:h-[130px] lg:w-[200px] lg:h-[110px] " />
                     <p className="text-sm text-gray-200 text-wrap mt-2 px-1 overflow-hidden text-ellipsis whitespace-nowrap  sm:text-[13px] md:mx-auto md:pt-2 md:text-[14px] md:font-bold  lg:text-sm lg:mx-1">{item.desc}</p>
                     <div className="flex flex-row">
+                    <Link href={"./"}>
                       <h5 className="font-bold text-white text-sm mt-1 sm:text-[12px] md:mt-3 md:text-md lg:text-[15px] md:pb-2 ">Read More</h5>
+                    </Link>
                     </div>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
