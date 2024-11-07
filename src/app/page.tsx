@@ -142,13 +142,13 @@ export default function Home() {
         <h1 className="flex h-60 my-12 justify-center items-center font-bold text-[60px]">
           EGERP Panipat
         </h1>
-
-        <div className="flex flex-col md:flex-row items-center">
+      </div>
+        <div className="flex flex-col md:flex-row items-center mt-32 ">
           {/* image sections */}
 
           {/* text sections */}
-          <div className="lg:w-[100%] sm:w-[100%] md:justify-around">
-            <div className="w-[70%] ml-8 flex flex-col lg:text-start">
+          <div className="lg:w-[100%] sm:w-[100%] flex justify-center ">
+            <div className="w-[70%] flex flex-col text-center">
               <h1 className="text-[40px] font-bold">Who We Are?</h1>
               <p>
                 We are pioneers of progression. At EGERP Panipat, we offer
@@ -169,11 +169,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="md:w-[50%] mt-6 mr-10  flex  items-center justify-center ">
+          <div className="sm:w-[100%] lg:w-[60%] m-4 flex justify-center mr-2 items-center">
             <Image
-              src={
-                "https://egerppanipat.com/wp-content/uploads/2024/01/employees-meeting-room-office-scaled-1-1024x784.jpg"
-              }
+            src="https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg"
               width={600}
               height={80}
               alt=""
@@ -181,15 +179,13 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+ 
 
       {/* third  section */}
 
-      <div className="flex flex-col-reverse md:flex-row items-start mt-32 border-3 ml-9"
-      // flex flex-col md:flex-row items-center
-      >
-        {/* Text Section */}
-        <div className="md:w-[50%] flex items-center justify-center mt-28">
+      <div className="flex flex-col-reverse md:flex-row items-center mt-32 ">
+          {/* image sections */}
+          <div className="sm:w-[100%] lg:w-[60%] m-4 flex justify-center mr-2 items-center">
           <Image
             src="https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg"
             width={600}
@@ -197,10 +193,11 @@ export default function Home() {
             alt="Meeting Room"
             className="rounded-[25px] object-cover"
           />
-        </div>
-        <div className="lg:w-[100%] sm:w-[100%] flex md:justify-end mt-10">
-        <div className="w-[70%] flex flex-col md:text-normal ">
-          <h1 className="text-[40px] font-bold mb-4">What We Do3?</h1>
+          </div>
+          {/* text sections */}
+          <div className="lg:w-[100%] sm:w-[100%] flex justify-center ">
+            <div className="w-[70%] flex flex-col text-center">
+          <h1 className="text-[40px] font-bold mb-4">What We Do?</h1>
           <p className="text-wrap mb-4">
             We specialize in digital marketing, ERP solutions, and customized
             software for our clients, prioritizing user-friendliness in every
@@ -217,16 +214,17 @@ export default function Home() {
             With EGERP Panipat, you’re not just finding digital solutions;
             you’re embracing a future of endless possibilities and growth.
           </p>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
 
       {/* fourth section */}
+      <div className="flex flex-col md:flex-row items-center mt-32 ">
+          {/* image sections */}
 
-      <div className="flex flex-col md:flex-row items-center mt-32">
-        {/* text sections */}
-        <div className="lg:w-[100%] sm:w-[100%] md:justify-around  ">
-          <div className="w-[70%] ml-8 flex flex-col lg:text-start">
+          {/* text sections */}
+          <div className="lg:w-[100%] sm:w-[100%] flex justify-center ">
+            <div className="w-[70%] flex flex-col text-center">
             <h1 className="text-[40px] font-bold">Our Impact</h1>
             <p>
             With every project, we don’t just deliver software; we deliver experiences that shape futures. Our impact resonates beyond code and design. We have provided diverse solutions to uplift the digital landscape of today’s business world.
@@ -237,9 +235,9 @@ export default function Home() {
             <p>
             Join us, and let’s make an impact together – an impact that lasts and leads the way to a brighter, more successful future.
             </p>
+            </div>
           </div>
-        </div>
-        <div className="w-[100%] mt-6 mr-10  flex  items-center justify-center">
+          <div className="sm:w-[100%] lg:w-[60%] m-4 flex justify-center mr-2 items-center">
           <Image
             src={
               "https://egerppanipat.com/wp-content/uploads/2024/01/pexels-tom-fisk-3856433-scaled-e1706178875123-1024x650.jpg"
@@ -249,8 +247,8 @@ export default function Home() {
             alt=""
             className="rounded-[25px] "
           />
+          </div>
         </div>
-      </div>
 
       {/* Our Services section */}
       <div className="flex justify-center items-center flex-col  w-full">
@@ -293,10 +291,10 @@ export default function Home() {
       </div>
 
       {/* why we choose section */}
-      <div className="flex flex-col">
+      <div className="flex flex-col text-center">
         {/* heading */}
 
-        <h1 className="flex h-60 my-6 justify-center items-center font-bold text-[50px] ml-4">
+        <h1 className="flex h-60 my-6 justify-center  items-center font-bold text-[50px] ml-4">
           Why Choose EGERP Panipat?
         </h1>
       </div>
@@ -349,7 +347,7 @@ export default function Home() {
       {/* Resources & Insights sections */}
       <div className="h-auto flex flex-col justify-center items-center">
         {/* heading section */}
-        <div className="">
+        <div className="text-center">
           <h1 className="flex h-60 my-6 justify-center items-center font-bold text-[50px]">
             Resources & Insights
           </h1>
