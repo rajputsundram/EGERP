@@ -2,6 +2,7 @@
 import React from "react";
 import Bloglink from "../../components/blogslink/Bloglink";
 import BlogpostCards from "../../components/BlogPost cards/BlogpostCards";
+import BlogTypeWriter from "@/components/BlogTypeWriter/BlogTypeWriter"
 
 export default function Blogs() {
    
@@ -199,18 +200,99 @@ export default function Blogs() {
             link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
           },
         ],
+        Lifestyle: [
+          {
+            id: 5,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'How to leverage export management solutions to grow your business.',
+            link: 'https://egerppanipat.com/ways-to-make-a-grey-kitchen-look-more-lively/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+        ],
+        Magazine: [
+          {
+            id: 5,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'How to leverage export management solutions to grow your business.',
+            link: 'https://egerppanipat.com/ways-to-make-a-grey-kitchen-look-more-lively/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+        ],
+        Health: [
+          {
+            id: 5,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'How to leverage export management solutions to grow your business.',
+            link: 'https://egerppanipat.com/ways-to-make-a-grey-kitchen-look-more-lively/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+          {
+            id: 6,
+            img: 'https://egerppanipat.com/wp-content/uploads/2024/01/pexels-lukas-574070-1024x678.jpg',
+            desc: 'Export strategies for small and medium enterprises.',
+            link: 'https://egerppanipat.com/5-common-seo-mistakes-businesses-make-and-how-to-avoid-them/',
+          },
+        ],
       };
       
 
     return (
         <>
-        <div className="mt-[40px] font-poppins font-bold text-[50px] flex flex-row justify-center items-center md:text-[60px] lg:text-[65px]"><h1>Welcome to Blog</h1></div>
+        <div>
+          <BlogTypeWriter/>
+
         <div className=" flex flex-row justify-center items-center">
             <Bloglink blogs={blogs}  />
             
         </div>
         <div className=" flex flex-row justify-center items-center">
                 <BlogpostCards Smallblogs={Smallblogs} />
+        </div>
         </div>
         </>
     );
