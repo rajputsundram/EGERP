@@ -138,12 +138,12 @@ export default function Home() {
 
       {/* second section */}
 
-      <div className="flex flex-col ">
-        <h1 className="flex h-60 my-12 justify-center items-center font-bold text-[60px]">
+      <div className="flex mt-20 justify-center">
+        <h1 className="flex text-center font-bold text-[60px]">
           EGERP Panipat
         </h1>
       </div>
-        <div className="flex flex-col md:flex-row items-center mt-32 ">
+        <div className="flex flex-col md:flex-row items-center mt-16">
           {/* image sections */}
 
           {/* text sections */}
@@ -355,13 +355,13 @@ export default function Home() {
 
         {/* cards sections */}
 
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="md:flex md:flex-wrap grid grid-cols-2 justify-center gap-2 ">
           {resources.map((items, index) => {
             return (
               <>
                 <div
                   key={index}
-                  className="flex flex-col rounded-2xl w-[300px]  h-[430px] shadow-lg hover:shadow-xl"
+                  className="flex flex-col rounded-2xl w-[400px] shadow-lg hover:shadow-xl"
                 >
                   <Image
                     className="rounded-t-2xl"
@@ -376,7 +376,7 @@ export default function Home() {
                     {items.title}
                   </h1>
                   <Link href={items.path}>
-                    <button className="flex mt-7 font-semibold mx-5 justify-center items-center border-red-600 border-t-2 text text-red-600">
+                    <button className="flex mt-7 font-semibold mx-5 mb-5 justify-center  items-center border-red-600 border-t-2 text text-red-600">
                       READ MORE{" "}
                       <span className="text-red-600 flex justify-center items-center gap-0 text-sm">
                         <IoChevronForward className=" text-[20px] w-[10px]" />
